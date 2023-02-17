@@ -1,0 +1,19 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Contact from '~/components/widgets/Contact.astro';
+---
+
+<Layout>
+  <Contact
+    callToAction={{ text: 'Contact', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:phone' }}
+    callToAction2={{ text: 'Afla mai multe', href: '#features' }}
+    person={{ name: 'Stan Sorin', position: 'Founder', phone: '0744 000 000' }}
+    person2={{ name: 'Stan Monica', position: 'Founder', phone: '0744 000 000' }}
+  >
+    <Fragment slot="title">Let's work together</Fragment>
+    <Fragment slot="subtitle">
+      For new project inquiries, please fill out this form. You can also send me an email or give me a call. I speak
+      German, English and Dutch.
+    </Fragment>
+  </Contact>
+</Layout>

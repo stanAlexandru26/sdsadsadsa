@@ -7,19 +7,19 @@ export const headerData = {
       href: '/despre',
     },
     {
-      text: 'Produse',
+      text: 'Sercivii',
       links: [
         {
           text: 'SSM',
-          href: getPermalink('/produse/ssm'),
+          href: getPermalink('/sercivii/ssm'),
         },
         {
           text: 'PSI-SU',
-          href: getPermalink('/produse/psi'),
+          href: getPermalink('/sercivii/psi'),
         },
         {
           text: 'Evaluari de risc',
-          href: getPermalink('/produse/evaluari-risc'),
+          href: getPermalink('/sercivii/evaluari-risc'),
         },
       ],
     },
@@ -33,7 +33,7 @@ export const headerData = {
       href: getBlogPermalink(),
     },
   ],
-  actions: [{ type: 'primary', text: 'Contact', href: 'https://github.com/onwidget/astrowind' }],
+  actions: [{ type: 'primary', text: 'Contact', href: getPermalink('/contact') }],
 };
 
 export const footerData = {
