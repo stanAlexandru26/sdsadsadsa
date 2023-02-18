@@ -18,7 +18,7 @@ const post = defineCollection({
   }),
 });
 
-const service = defineCollection({
+const servicii = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string().optional(),
@@ -28,5 +28,5 @@ const service = defineCollection({
 
 export const collections = {
   post: post,
-  service: service,
+  servicii: servicii,
 };

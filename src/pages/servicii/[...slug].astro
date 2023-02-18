@@ -1,0 +1,25 @@
+---
+import { SITE } from '~/config.mjs';
+
+import Layout from '~/layouts/PageLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const servicii = await getCollection('servicii');
+  return servicii.map((serviciu) => ({
+    params: { slug: serviciu.slug },
+    props: { serviciu },
+  }));
+}
+
+const { serviciu } = Astro.props;
+console.log('🚀 ~ file: [...slug].astro:16 ~ serviciu', serviciu);
+const meta = {
+  title: 'ddsadas',
+};
+---
+
+<Layout {meta}>
+  <h1>{serviciu.data.titile}</h1>
+  <div class="prose">{serviciu.body}</div>
+</Layout>

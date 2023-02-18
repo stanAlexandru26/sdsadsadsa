@@ -1,6 +1,7 @@
 ---
-publishDate: 2023-01-13T00:00:00Z
-title: Markdown elements demo post
+layout: '~/layouts/MarkdownLayout.astro'
+publishDate: 2023-01-02T00:00:00Z
+title: Despre Sam Protect
 description: Lorem ipsum dolor sit amet
 excerpt: Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor.
 tags:
@@ -9,7 +10,9 @@ tags:
   - Astro
 ---
 
-import Logo from '~/components/Logo.astro';
+## O echipa mica cu muuuulta experienta
+
+![Super wide](https://images.unsplash.com/photo-1471128466710-c26ff0d26143?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2MDc4MTk3Mw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080)
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
@@ -166,25 +169,3 @@ _Proident sit veniam in est proident officia adipisicing_ ea tempor cillum non c
 Incididunt in culpa cupidatat mollit cillum qui proident sit. In cillum aliquip incididunt voluptate magna amet cupidatat cillum pariatur sint aliqua est _enim **anim** voluptate_. Magna aliquip proident incididunt id duis pariatur eiusmod incididunt commodo culpa dolore sit. Culpa do nostrud elit ad exercitation anim pariatur non minim nisi **adipisicing sunt _officia_**. Do deserunt magna mollit Lorem commodo ipsum do cupidatat mollit enim ut elit veniam ea voluptate.
 
 Reprehenderit non eu quis in ad elit esse qui aute id [incididunt](#!) dolore cillum. Esse laboris consequat dolor anim exercitation tempor aliqua deserunt velit magna laboris. Culpa culpa minim duis amet mollit do quis amet commodo nulla irure.
-
-[[Top]](#top)
-
-## MDX
-
-```js
----
-publishDate: 'Aug 02 2022'
-title: 'Markdown elements demo post'
----
-import Logo from "~/components/Logo.astro";
-
-## MDX
-
-<Logo />
-```
-
-<div style="background:#eee;padding: 10px 5px">
-  <Logo />
-</div>
-
-[[Top]](#top)

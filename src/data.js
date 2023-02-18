@@ -7,19 +7,19 @@ export const headerData = {
       href: '/despre',
     },
     {
-      text: 'Sercivii',
+      text: 'Servicii',
       links: [
         {
           text: 'SSM',
-          href: getPermalink('/sercivii/ssm'),
+          href: getPermalink('/servicii/ssm'),
         },
         {
           text: 'PSI-SU',
-          href: getPermalink('/sercivii/psi'),
+          href: getPermalink('/servicii/psi'),
         },
         {
           text: 'Evaluari de risc',
-          href: getPermalink('/sercivii/evaluari-risc'),
+          href: getPermalink('/servicii/evaluari-risc'),
         },
       ],
     },
@@ -30,7 +30,11 @@ export const headerData = {
 
     {
       text: 'Blog',
-      href: getBlogPermalink(),
+      href: getBlogPermalink('/blog'),
+    },
+    {
+      text: 'Servicii Test',
+      href: getPermalink('/servicii'),
     },
   ],
   actions: [{ type: 'primary', text: 'Contact', href: getPermalink('/contact') }],
