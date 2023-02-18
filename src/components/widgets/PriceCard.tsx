@@ -19,8 +19,8 @@ export const PriceCard = ({ initial = 5 }) => {
     },
   ];
   return (
-    <div className="grid grid-cols-2 gap-8 justify-center content-center">
-      <div className="mx-auto max-w-sm relative self-center space-y-8 bg-primary rounded-xl text-white p-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 justify-center content-center">
+      <div className="mx-auto  relative self-center space-y-8 bg-primary rounded-xl text-white p-8">
         <h3 className="text-left text-2xl font-medium ">Ca-ti anjagati aveti ?</h3>
         <p className="text-left text-3xl font-extrabold  ">{price}</p>
         <CustomSlider setPrice={setPrice} />
@@ -28,9 +28,9 @@ export const PriceCard = ({ initial = 5 }) => {
 
       <div className="basis-1/2 mx-auto  rounded-3xl bg-white  shadow-xl ">
         {data.map((tier) => (
-          <div key={tier.name} className="px-8 py-6 space-y-4">
+          <div key={tier.name} className="px-6 py-8 space-y-4">
             <h3 className="text-center text-3xl font-extrabold">{tier.name}</h3>
-            <p className="mt-12">
+            <p className="py-4">
               <span className="text-3xl font-semibold ">{price * tier.price} Lei</span>
               <span className="ml-2.5 text-2xl font-medium text-gray-500">/luna</span>
               <span className="ml-1 text-xl font-medium text-gray-500">+</span>
