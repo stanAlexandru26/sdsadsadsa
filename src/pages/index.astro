@@ -2,7 +2,7 @@
 import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 
-import Hero2 from '~/components/widgets/Hero2.astro';
+import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
 import Steps from '~/components/widgets/Steps.astro';
@@ -20,7 +20,7 @@ const meta = {
 <Layout {meta}>
   <!-- Hero Widget ******************* -->
 
-  <Hero2
+  <Hero
     callToAction={{ text: 'Contact', href: '/contact', icon: 'tabler:phone' }}
     callToAction2={{ text: 'Afla mai multe', href: '#features' }}
     image={{ src: import('~/assets/images/hero.png'), alt: 'Hero Image' }}
@@ -35,7 +35,7 @@ const meta = {
         Suntem aici pentru a vă ajuta să vă protejați angajații și să vă mențineți locul de muncă sigur și sănătos.
       </span>
     </Fragment>
-  </Hero2>
+  </Hero>
   <!-- Note Widget ******************* -->
 
   <Note />

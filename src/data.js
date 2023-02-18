@@ -32,10 +32,6 @@ export const headerData = {
       text: 'Blog',
       href: getBlogPermalink('/blog'),
     },
-    {
-      text: 'Contact',
-      href: getPermalink('/contact'),
-    },
   ],
   actions: [{ type: 'primary', text: 'Contact', href: getPermalink('/contact') }],
 };
@@ -74,7 +70,6 @@ export const footerData = {
         { text: 'Despre', href: '#' },
         { text: 'Blog', href: '#' },
         { text: 'Cariere', href: '#' },
-        { text: 'Magazin', href: '#' },
       ],
     },
   ],
