@@ -1,7 +1,22 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
+import Logo from '~/components/Logo.astro';
+import { PriceCard } from '~/components/widgets/PriceCard';
 ---
 
 <Layout>
-  <h1>My Page</h1>
+  <section class="px-4 py-16 mx-auto max-w-6xl lg:px-8 lg:py-20">
+    <div class="mb-10 md:mx-auto text-center md:mb-12 max-w-3xl">
+      <h2 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading">
+        Simple, Fair Pricing.
+      </h2>
+
+      <p class="max-w-3xl mx-auto sm:text-center text-xl text-muted dark:text-slate-400">
+        La <Logo /> nu trebuie sa iti faci griji cu banii,totul e simplu.
+      </p>
+    </div>
+    <div class="mb-10 md:mx-auto text-center md:mb-12 max-w-3xl">
+      <PriceCard client:load />
+    </div>
+  </section>
 </Layout>
