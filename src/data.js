@@ -1,4 +1,4 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink, getBlogPermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
@@ -43,61 +43,44 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Link-uri utile',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '/get-started-website-with-astro-tailwind-css' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'ITM Cluj', href: '#' },
+        { text: 'ITM Bistrita', href: '#' },
+        { text: 'ITM Baia Mare', href: '#' },
+        { text: 'Inspectia Muncii', href: '#' },
       ],
     },
     {
-      title: 'Platform',
+      title: 'Servicii',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
+        { text: 'PSI-SU', href: '#' },
+        { text: 'SSM', href: '#' },
+        { text: 'Evaluari de risc', href: '#' },
       ],
     },
     {
-      title: 'Support',
+      title: 'Parteneri',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'Medicina Muncii', href: '#' },
+        { text: 'Pram', href: '#' },
+        { text: 'Cursuri de prim ajutor', href: '#' },
+        { text: 'Cursuri de ssm', href: '#' },
       ],
     },
     {
       title: 'Company',
       links: [
-        { text: 'About', href: '#' },
+        { text: 'Despre', href: '#' },
         { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'Cariere', href: '#' },
+        { text: 'Magazin', href: '#' },
       ],
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Termeni si conditii', href: getPermalink('/terms') },
+    { text: 'GDPR', href: getPermalink('/privacy') },
+    { text: 'Cookie', href: getPermalink('/cookies') },
   ],
-  socialLinks: [
-    { ariaLabel: 'Twitter', icon: 'tabler:brand-twitter', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-  ],
-  footNote: `
-    <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 float-left rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
-    Made by <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
-  `,
 };
