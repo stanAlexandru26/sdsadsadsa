@@ -49,24 +49,6 @@ const {
           <div
             class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 lg:justify-start lg:m-0 lg:max-w-7xl"
           >
-            {
-              person2 && (
-                <div class="flex w-full sm:w-auto btn flex-col">
-                  <span>{person2.name}</span>
-                  <span>{person2.position}</span>
-                  <span>{person2?.phone}</span>
-                </div>
-              )
-            }
-            {
-              person && (
-                <div class="flex w-full sm:w-auto btn flex-col">
-                  <span>{person.name}</span>
-                  <span>{person.position}</span>
-                  <span>{person.phone}</span>
-                </div>
-              )
-            }
           </div>
         </div>
         {content && <Fragment set:html={content} />}
