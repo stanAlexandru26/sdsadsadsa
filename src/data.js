@@ -32,10 +32,10 @@ export const headerData = {
       text: 'Blog',
       href: getBlogPermalink('/blog'),
     },
-    {
-      text: 'Servicii Test',
-      href: getPermalink('/servicii'),
-    },
+    // {
+    //   text: 'Servicii Test',
+    //   href: getPermalink('/servicii'),
+    // },
   ],
   actions: [{ type: 'primary', text: 'Contact', href: getPermalink('/contact') }],
 };
