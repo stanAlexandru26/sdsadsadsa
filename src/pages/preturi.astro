@@ -6,7 +6,7 @@ import FAQs from '~/components/widgets/FAQs.astro';
 ---
 
 <Layout>
-  <section class="px-4 pt-16 mx-auto max-w-6xl lg:px-8 ">
+  <section class="px-4 pt-16 mx-auto max-w-6xl lg:px-8">
     <div class="mb-10 md:mx-auto text-center md:mb-12 max-w-3xl">
       <h2 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading">
         Simple, Fair Pricing.
@@ -17,7 +17,7 @@ import FAQs from '~/components/widgets/FAQs.astro';
       </p>
     </div>
     <div class="mb-10 md:mx-auto text-center md:mb-12 max-w-3xl">
-      <PriceCard client:load />
+      <PriceCard client:only="react"  />
     </div>
   </section>
   <!-- FAQs Widget ******************* -->

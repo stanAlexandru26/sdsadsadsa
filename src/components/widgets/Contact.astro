@@ -1,5 +1,4 @@
 ---
-import { Picture } from '@astrojs/image/components';
 
 interface CallToAction {
   text: string;
@@ -25,8 +24,6 @@ const {
   title = await Astro.slots.render('title'),
   subtitle = await Astro.slots.render('subtitle'),
   content = await Astro.slots.render('content'),
-  person = await Astro.slots.render('person'),
-  person2 = await Astro.slots.render('person2'),
 } = Astro.props;
 ---
 

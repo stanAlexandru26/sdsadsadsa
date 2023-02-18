@@ -23,6 +23,7 @@ module.exports = {
       parserOptions: {
         parser: '@typescript-eslint/parser',
         extraFileExtensions: ['.astro'],
+        ecmaVersion: 2020,
       },
       rules: {
         'no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],
@@ -31,6 +32,9 @@ module.exports = {
     {
       files: ['*.ts'],
       parser: '@typescript-eslint/parser',
+      parserOptions: {
+        ecmaVersion: 2020,
+      },
       extends: ['plugin:@typescript-eslint/recommended'],
       rules: {
         '@typescript-eslint/no-unused-vars': [
