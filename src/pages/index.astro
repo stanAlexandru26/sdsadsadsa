@@ -26,7 +26,7 @@ const meta = {
   <Hero2
     callToAction={{ text: 'Contact', href: '/contact', icon: 'tabler:phone' }}
     callToAction2={{ text: 'Afla mai multe', href: '#features' }}
-    image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
+    image={{ src: import('~/assets/images/hero.png'), alt: 'Hero Image' }}
   >
     <Fragment slot="title">
       <span class="text-accent dark:text-white highlight"> Sănătate</span>
@@ -47,7 +47,7 @@ const meta = {
 
   <Features
     highlight="Features"
-    title="What you get with AstroWind"
+    title="What you get with astro"
     subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae."
     items={[
       [
@@ -92,7 +92,16 @@ const meta = {
       ],
     ]}
   />
+  <!-- Stats Widget ****************** -->
 
+  <Stats
+    client:load
+    items={[
+      { name: 'Clienti asistati SSM si PSI/SU', value: 200 },
+      { name: 'Documentatii SSM si PSI/SU intocmite', value: 200 },
+      { name: 'Evaluari de riscuri de accidentare', value: 200 },
+    ]}
+  />
   <!-- Content Widget **************** -->
 
   <Content
@@ -161,7 +170,7 @@ const meta = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Get your dream website up and running in no time with astro."
     items={[
       {
         title: 'Step 1: <span class="font-medium">Download</span>',
@@ -196,15 +205,15 @@ const meta = {
 
   <LatestPosts
     title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
+    information={`The blog is used to display documentation.
 			Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
 			Astro is a very interesting technology. Thanks.
 		`}
     postIds={[
       'get-started-website-with-astro-tailwind-css.md',
-      'how-to-customize-astrowind-to-your-brand.md',
+      'how-to-customize-to-your-brand.md',
       'useful-resources-to-create-websites.md',
-      'astrowind-template-in-depth.md',
+      'template-in-depth.md',
     ]}
   />
 
@@ -251,34 +260,4 @@ const meta = {
       ],
     ]}
   />
-
-  <!-- Stats Widget ****************** -->
-
-  <Stats
-    items={[
-      { name: 'Downloads', value: '132K' },
-      { name: 'Stars', value: '24.8K' },
-      { name: 'Forks', value: '10.3K' },
-      { name: 'Users', value: '48.4K' },
-    ]}
-  />
-
-  <!-- CallToAction Widget *********** -->
-
-  <CallToAction
-    callToAction={{
-      text: 'Get template',
-      href: 'https://github.com/onwidget/astrowind',
-      icon: 'tabler:download',
-    }}
-  >
-    <Fragment slot="title">
-      Astro + <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
-    </Fragment>
-  </CallToAction>
 </Layout>
