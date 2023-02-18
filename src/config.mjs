@@ -14,10 +14,10 @@ const CONFIG = {
 
   defaultTheme: 'light', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
-  language: 'en',
+  language: 'ro',
   textDirection: 'ltr',
 
-  dateFormatter: new Intl.DateTimeFormat('en', {
+  dateFormatter: new Intl.DateTimeFormat('ro', {
     year: 'numeric',
     month: 'short',
     day: 'numeric',
